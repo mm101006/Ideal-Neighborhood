@@ -64,8 +64,8 @@ function Create() {
       function BounceIcon() {
         self.markerArray.forEach(function(place){
           if (place.marker.animation == 1){
-            place.marker.setAnimation(null)
-          };
+            place.marker.setAnimation(null);
+          }
         });
         if (currentMarker == place.marker) {
           place.marker.setAnimation(null);
@@ -91,8 +91,8 @@ function Create() {
       function BounceMarker(locationBounce) {
         self.markerArray.forEach(function(place){
           if (place.marker.animation == 1){
-            place.marker.setAnimation(null)
-          };
+            place.marker.setAnimation(null);
+          }
         });
         if (currentMarker == locationBounce) {
           place.marker.setAnimation(null);
@@ -139,14 +139,10 @@ function Create() {
                         pitch: 0
                       }
                     };
-                var panorama = new google.maps.StreetViewPanorama(
-                    document.getElementById('pano'), panoramaOptions);
-                } else {
-                  infowindow.setContent('<div>' + marker.title + '</div>' +
-                    '<div>No Street View Found</div>');
+                var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
                 }
                 map.setStreetView(panorama);
-              }
+              };
               // Use streetview service to get the closest streetview image within
               // 50 meters of the markers position;
               streetViewService.getPanoramaByLocation(marker.position, radius, getStreetView);
