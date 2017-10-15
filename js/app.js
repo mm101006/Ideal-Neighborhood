@@ -143,7 +143,7 @@ function Create() {
                 }
                 createView = function() {
                   map.setStreetView(panorama);
-                }
+                };
               };
               // Use streetview service to get the closest streetview image within
               // 50 meters of the markers position;
