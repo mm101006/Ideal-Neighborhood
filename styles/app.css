@@ -55,7 +55,7 @@
 	font-family: 'Indie Flower', cursive;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 650px) {
 	#list {
 	display: none;
 	}

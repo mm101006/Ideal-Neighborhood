@@ -253,6 +253,9 @@ self.markerArray.forEach(function(place){
       dataType: "jsonp",
       success: function( data ) {
           self.info(data[2][0]);
+      },
+      error: function(request, status, error){
+          self.info('Failed to retrieve info from wikipedia. Please check internet connection or code.');
       }
     });
   }
