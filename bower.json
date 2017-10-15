@@ -1,0 +1,21 @@
+{
+  "name": "Neighborhood Map",
+  "authors": [
+    "Matthew Mangiaracina <mm101006@gmail.com>"
+  ],
+  "description": "My ideal Neighborhood",
+  "main": "IdealNeighborhood.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "^3.4.2",
+    "bootstrap": "v4.0.0-beta"
+  }
+}

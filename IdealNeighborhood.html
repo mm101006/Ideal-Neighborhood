@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="styles/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" >
+    <img src="styles/images/neighborhood.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Ideal Neighborhood
+  </a>
+   <form class="form-inline">
+    <input class="form-control mr-sm-2" data-bind="value: userInput" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-bind="click: filterMarkers">Search</button>
+  </form>
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Map Tools
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  	 <li class="dropdown-item" data-bind="visible: disHide, click: disappear">Disappear!</li>
+  	 <li class="dropdown-item" data-bind="visible: disShow, click: reappear">Reappear!</li>
+     <li class="dropdown-item" data-bind="visible: hidebutton, click: drawIt">Draw It!</li>
+     <li class="dropdown-item" data-bind="visible: showbutton, click: removeIt">Undo It!</li>
+  </div>
+</div>
+</nav>
+<div id="map"></div>
+
+<div class="row">
+    <div class="list-group" id="list-tab" role="tablist" data-bind="foreach: activeMarkers">
+      <a class="list-group-item list-group-item-action active" id="list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" data-bind="text: title, click: $parent.list"></a>
+    </div>
+ </div>
+
+<div id="pano"></div>
+<div id="bottom"><p><span data-bind="text: info"></span></p></div>
+
+<div class="container-fluid">
+	<!-- Modal -->
+	<div class="modal fade" id="slide-popup" tabindex="-1" role="dialog" aria-labelledby="scriptCheckModal"  data-keyboard="false" data-backdrop="false">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="scriptCheckModal">Application Failed to Retrieve API</h5>
+	      </div>
+	      <div class="modal-body">
+	        <p data-bind="text: errorMessage"></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlP34B1umoREp5ps1kB4ho0wSPERnm5C4&callback=googleSuccess" onerror="googleError()" async defer></script>
+<script type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
+<script type='text/javascript' src='bower_components/popper.js/dist/umd/popper.js'></script>
+<script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+<script type='text/javascript' src='bower_components/knockout/dist/knockout.js'></script>
+<script src="js/app.js"></script>
+</body>
+</html>
