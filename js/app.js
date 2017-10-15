@@ -1,3 +1,4 @@
+/*jshint sub:true*/
 // if script does not reside in the temp folder or script is wrong
 // and no internet connection to retrieve script,
 // this googleError function will be used
@@ -29,7 +30,7 @@ var ModelError = function(e) {
    if (e.type == "error" && e.target['tagName'] == "SCRIPT"){
         $('#slide-popup').modal('show');
       }
-}
+};
 
 var ViewModel = function(map,locationList, unfinishedPentagramCoordinates) {
   var self = this;
@@ -62,8 +63,8 @@ function Create() {
       // if not marker starts to bounce
       function BounceIcon() {
         self.markerArray.forEach(function(place){
-          if (place.marker.animation = 1){
-            place.marker.setAnimation(null);
+          if (place.marker.animation == 1){
+            place.marker.setAnimation(null)
           };
         });
         if (currentMarker == place.marker) {
@@ -83,14 +84,14 @@ function Create() {
       // Used for when user clicks on a named place within the list of places available
       self.list = function() {
         BounceMarker(this.marker);
-      }
+      };
 
       // function checks to see if marker is already animated if so cancels animation out,
       // if not marker starts to bounce
       function BounceMarker(locationBounce) {
         self.markerArray.forEach(function(place){
-          if (place.marker.animation = 1){
-            place.marker.setAnimation(null);
+          if (place.marker.animation == 1){
+            place.marker.setAnimation(null)
           };
         });
         if (currentMarker == locationBounce) {
@@ -105,14 +106,14 @@ function Create() {
         wiki(title);
         currentMarker = locationBounce;
       }
-      };
+      }
 
       function populateInfoWindow(marker, infowindow) {
             // Check to make sure the infowindow is not already opened on this marker.
             if (infowindow.marker != marker) {
               // Clear the infowindow content to give the streetview time to load.
               var checkId = document.getElementById('pano');
-              if (checkId != null) {
+              if (checkId !== null) {
                 document.getElementById('pano').remove();
               }
               infowindow.setContent('');
@@ -125,7 +126,7 @@ function Create() {
               // In case the status is OK, which means the pano was found, compute the
               // position of the streetview image, then calculate the heading, then get a
               // panorama from that and set the options
-              function getStreetView(data, status) {
+              getStreetView = function(data, status) {
                 if (status == google.maps.StreetViewStatus.OK) {
                   var nearStreetViewLocation = data.location.latLng;
                   var heading = google.maps.geometry.spherical.computeHeading(
@@ -184,8 +185,8 @@ self.markerArray.forEach(function(place){
         strokeWeight: 2
       });
 
-    this.showbutton = ko.observable(false) // undo
-    this.hidebutton = ko.observable(true) // drawit
+    this.showbutton = ko.observable(false); // undo
+    this.hidebutton = ko.observable(true); // drawit
 
     self.drawIt = function() {
        unfinishedPentagram.setMap(map);
@@ -211,7 +212,7 @@ self.markerArray.forEach(function(place){
     });
     this.disHide(false);
     this.disShow(true);
-  }
+  };
 
   this.reappear = function() {
     Create();
@@ -220,7 +221,7 @@ self.markerArray.forEach(function(place){
     self.markerArray.forEach(function(place){
       self.activeMarkers.push(place);
     });
-  }
+  };
 
 
   // Searches for anything that matches what the user put in
@@ -241,7 +242,7 @@ self.markerArray.forEach(function(place){
     self.activeMarkers().forEach(function(place) {
       place.marker.setMap(self.googleMap);
     });
-  }
+  };
 
   // Handles wiki api and info changes based on user click of location
   self.info = ko.observable();
@@ -265,7 +266,7 @@ self.markerArray.forEach(function(place){
 
   // creates the markers when viewmodel has loaded
   Create();
-}
+};
 
 
 function googleSuccess() {
@@ -345,7 +346,7 @@ function googleSuccess() {
         location: {lat: 38.9025, lng: -77.05},
         icon: 'styles/images/placeIcons/citysquare.png'
       }
-    ]
+    ];
 
   unfinishedPentagramCoordinates = [
       {lat: 38.9025, lng: -77.05}, // washington circle
