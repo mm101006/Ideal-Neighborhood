@@ -190,7 +190,7 @@ self.markerArray.forEach(function(place){
        unfinishedPentagram.setMap(map);
        this.showbutton(true);
        this.hidebutton(false);
-       self.info('The Pentalpha, a symbnol of liberty and freedom or a puzzle where the goal is to place nine stones on the ten intersections of a pentagram or a means to ensare demons to do your bidding like in Faust?');
+       self.info('The Pentalpha, a symbnol of liberty and freedom or a puzzle where the goal is to place nine stones on the ten intersections of a pentagram or a means to ensnare demons to do your bidding like in Faust?');
     };
 
     self.removeIt = function() {
@@ -275,77 +275,77 @@ function googleSuccess() {
       {
         title: 'Library of Congress',
         location: {lat: 38.8887, lng: -77.0047},
-        icon: 'styles/images/placeIcons/library.png'
+        icon: 'assets/images/placeIcons/library.png'
       },
       {
         title: 'United States Capitol',
         location: {lat: 38.8899, lng: -77.0091},
-        icon: 'styles/images/placeIcons/monument-historique.png'
+        icon: 'assets/images/placeIcons/monument-historique.png'
       },
       {
         title: 'Supreme Court of the United States',
         location: {lat: 38.8906, lng: -77.0044},
-        icon: 'styles/images/placeIcons/temple-2.png'
+        icon: 'assets/images/placeIcons/temple-2.png'
       },
       {
         title: 'International Spy Museum',
         location: {lat: 38.8969, lng: -77.0236},
-        icon: 'styles/images/placeIcons/museum_war.png'
+        icon: 'assets/images/placeIcons/museum_war.png'
       },
       {
         title: 'Washington Monumnet',
         location: {lat: 38.8895, lng: -77.0353},
-        icon: 'styles/images/placeIcons/modernmonument.png'
+        icon: 'assets/images/placeIcons/modernmonument.png'
       },
       {
         title: 'The Ellipse',
         location: {lat: 38.8940, lng: -77.0365},
-        icon: 'styles/images/placeIcons/anthropo.png'
+        icon: 'assets/images/placeIcons/anthropo.png'
       },
       {
         title: 'Lafayette Square, Washington, D.C.',
         location: {lat: 38.8995, lng: -77.0366},
-        icon: 'styles/images/placeIcons/citysquare.png'
+        icon: 'assets/images/placeIcons/citysquare.png'
       },
       {
         title: 'Thomas Circle',
         location: {lat: 38.9057, lng: -77.0320},
-        icon: 'styles/images/placeIcons/citysquare.png'
+        icon: 'assets/images/placeIcons/citysquare.png'
       },
       {
         title: 'Logan Circle, Washington DC',
         location: {lat: 38.9096, lng: -77.0296},
-        icon: 'styles/images/placeIcons/citysquare.png'
+        icon: 'assets/images/placeIcons/citysquare.png'
       },
       {
         title: 'White House',
         location: {lat: 38.8977, lng: -77.0365},
-        icon: 'styles/images/placeIcons/palace-2.png'
+        icon: 'assets/images/placeIcons/palace-2.png'
       },
       {
         title: 'Reflecting Pool',
         location: {lat: 38.8893, lng: -77.0447},
-        icon: 'styles/images/placeIcons/fountain-2.png'
+        icon: 'assets/images/placeIcons/fountain-2.png'
       },
       {
         title: 'Scott Circle',
         location: {lat: 38.9072, lng: -77.0365},
-        icon: 'styles/images/placeIcons/citysquare.png'
+        icon: 'assets/images/placeIcons/citysquare.png'
       },
       {
         title: 'Dupont Circle',
         location: {lat: 38.9097, lng: -77.0433},
-        icon: 'styles/images/placeIcons/citysquare.png'
+        icon: 'assets/images/placeIcons/citysquare.png'
       },
       {
         title: 'Historical Society of Washington, D.C.',
         location: {lat: 38.9026, lng: -77.0229},
-        icon: 'styles/images/placeIcons/monument-historique.png'
+        icon: 'assets/images/placeIcons/monument-historique.png'
       },
       {
         title: 'Washington Circle',
         location: {lat: 38.9025, lng: -77.05},
-        icon: 'styles/images/placeIcons/citysquare.png'
+        icon: 'assets/images/placeIcons/citysquare.png'
       }
     ];
 
