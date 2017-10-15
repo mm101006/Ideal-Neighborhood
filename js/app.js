@@ -141,7 +141,9 @@ function Create() {
                     };
                 var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
                 }
-                map.setStreetView(panorama);
+                createView = function() {
+                  map.setStreetView(panorama);
+                }
               };
               // Use streetview service to get the closest streetview image within
               // 50 meters of the markers position;
