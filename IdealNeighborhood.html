@@ -26,23 +26,27 @@
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Map Tools
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <div class="dropdown-menu tools" aria-labelledby="dropdownMenuButton">
   	 <li class="dropdown-item" data-bind="visible: disHide, click: disappear">Disappear!</li>
   	 <li class="dropdown-item" data-bind="visible: disShow, click: reappear">Reappear!</li>
      <li class="dropdown-item" data-bind="visible: hidebutton, click: drawIt">Draw It!</li>
      <li class="dropdown-item" data-bind="visible: showbutton, click: removeIt">Undo It!</li>
   </div>
 </div>
-</nav>
-<div id="map"></div>
-
-<div class="row">
-    <div class="list-group" id="list-tab" role="tablist" data-bind="foreach: activeMarkers">
-      <a class="list-group-item list-group-item-action active" id="list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" data-bind="text: title, click: $parent.list"></a>
+ <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" data-bind="visible: disHide" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Available Locations
+  </button>
+  <div class="dropdown-menu locations" aria-labelledby="dropdownMenuButton">
+      <div data-bind="foreach: activeMarkers">
+     	<li class="location" data-bind="text: title, click: $parent.list"></li>
+     </div>
     </div>
- </div>
+</div>
+</nav>
+<div id="map"><div id="pano"></div></div>
 
-<div id="pano"></div>
+
 <div id="bottom"><p><span data-bind="text: info"></span></p></div>
 
 <div class="container-fluid">

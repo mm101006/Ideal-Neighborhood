@@ -10,36 +10,24 @@
 	background-color: red;
 }
 
+div.dropdown-menu.show {
+	display: block;
+	padding: 0.01rem .5rem;
+	clear: both;
+	font-weight: normal;
+	color: #212529;
+	text-align: inherit;
+	border: 0;
+}
+
+.location:hover {
+	background-color: yellow;
+}
+
 #pano {
 	width: 200px;
     height: 200px;
 }
-
-#locationList {
-	background-color: transparent;
-	color: white;
-	margin: auto;
-	text-align: center;
-}
-
-#list {
-	background-color: transparent;
-}
-
-.row {
-	position: relative;
-	display: inline-block;
-	margin-top: 100px;
-	margin-left: 10px;
-	height: auto;
-    max-height: 200px;
-    overflow: auto;
-}
-
-#list:hover {
-    background-color: black;
-}
-
 
 #bottom {
 	position: fixed;
