@@ -293,7 +293,7 @@ function googleSuccess() {
         icon: 'assets/images/placeIcons/museum_war.png'
       },
       {
-        title: 'Washington Monumnet',
+        title: 'Washington Monument',
         location: {lat: 38.8895, lng: -77.0353},
         icon: 'assets/images/placeIcons/modernmonument.png'
       },
@@ -323,7 +323,7 @@ function googleSuccess() {
         icon: 'assets/images/placeIcons/palace-2.png'
       },
       {
-        title: 'Reflecting Pool',
+        title: 'Reflecting Pool, Washington, D.C.',
         location: {lat: 38.8893, lng: -77.0447},
         icon: 'assets/images/placeIcons/fountain-2.png'
       },
@@ -343,7 +343,7 @@ function googleSuccess() {
         icon: 'assets/images/placeIcons/monument-historique.png'
       },
       {
-        title: 'Washington Circle',
+        title: 'Washington Circle, Washington, D.C.',
         location: {lat: 38.9025, lng: -77.05},
         icon: 'assets/images/placeIcons/citysquare.png'
       }
