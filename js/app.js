@@ -323,7 +323,7 @@ function googleSuccess() {
         icon: 'assets/images/placeIcons/palace-2.png'
       },
       {
-        title: 'Reflecting Pool, Washington, D.C.',
+        title: 'Reflecting Pool',
         location: {lat: 38.8893, lng: -77.0447},
         icon: 'assets/images/placeIcons/fountain-2.png'
       },
@@ -343,7 +343,7 @@ function googleSuccess() {
         icon: 'assets/images/placeIcons/monument-historique.png'
       },
       {
-        title: 'Washington Circle, Washington, D.C.',
+        title: 'Washington Circle',
         location: {lat: 38.9025, lng: -77.05},
         icon: 'assets/images/placeIcons/citysquare.png'
       }
