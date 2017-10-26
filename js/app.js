@@ -240,6 +240,9 @@ self.markerArray.forEach(function(place){
     self.activeMarkers().forEach(function(place) {
       place.marker.setMap(self.googleMap);
     });
+
+    this.disHide(true);
+    this.disShow(false);
   };
 
   // Handles wiki api and info changes based on user click of location
