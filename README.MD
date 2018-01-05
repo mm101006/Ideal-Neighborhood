@@ -1,6 +1,8 @@
 # Project: Neighborhood Map
 
-This project is for the Nanodegree Full Stack Development. For my project I created a web application using bootstrap, jquery, knockoutjs, and popperjs. The application uses google maps api which provides a satellite image of Washington D.C. When the page successfully loads, the user can click on a marker or a named place within the scrollbar to the right. When either the name or marker is clicked an infowindow will be revealed. The user can also use map tools to eliminate markers, recreate markers, and reveal a drawing on the map.
+For this project I created a web application using bootstrap, jquery, knockoutjs, and popperjs. The application uses google maps api which provides a satellite image of Washington D.C. When the page successfully loads, the user can click on a marker or a named place within the button to the right. When either the name or marker is clicked an infowindow will be revealed. The user can also use map tools to eliminate markers, recreate markers, and reveal a drawing on the map.
+
+![Pic](IdealNeighborhood.png)
 
 **Tools Used**
 
