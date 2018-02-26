@@ -1,4 +1,3 @@
-/*jshint sub:true*/
 // if script does not reside in the temp folder or script is wrong
 // and no internet connection to retrieve script,
 // this googleError function will be used
